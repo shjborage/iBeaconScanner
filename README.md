@@ -2,6 +2,7 @@ iBeaconScanner
 ==============
 
 Mac Application to scan for nearby iBeacons regardless of their UUID.
+Add iOS demo for this scanner.
 
 Features
 ========
@@ -17,7 +18,7 @@ Features
 Download
 ========
 
-You can either check the source code out and compile it yourself or you can get a pre-compiled build from [here](https://github.com/liamnichols/iBeaconScanner/tree/master/Builds)
+You can either check the source code out and compile it yourself or you can get a pre-compiled build from [here](https://github.com/shjborage/iBeaconScanner/tree/master/Mac/Builds)
 
 
 ![preview](http://i.imgur.com/WQxC4Ng.png "preview")
