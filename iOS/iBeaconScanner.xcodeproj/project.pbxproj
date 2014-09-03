@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C1989419B5938A00657CDB /* iBeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C1989319B5938A00657CDB /* iBeaconCell.m */; };
+		47C1989B19B5968100657CDB /* iBeaconScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C1989A19B5968100657CDB /* iBeaconScanner.m */; };
+		47C1989D19B5985100657CDB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C1989C19B5985100657CDB /* CoreBluetooth.framework */; };
 		47CA47BB19B56F91002C3DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA47BA19B56F91002C3DF4 /* Foundation.framework */; };
 		47CA47BD19B56F91002C3DF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA47BC19B56F91002C3DF4 /* CoreGraphics.framework */; };
 		47CA47BF19B56F91002C3DF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA47BE19B56F91002C3DF4 /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47C1989219B5938A00657CDB /* iBeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBeaconCell.h; sourceTree = "<group>"; };
+		47C1989319B5938A00657CDB /* iBeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBeaconCell.m; sourceTree = "<group>"; };
+		47C1989919B5968100657CDB /* iBeaconScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBeaconScanner.h; sourceTree = "<group>"; };
+		47C1989A19B5968100657CDB /* iBeaconScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBeaconScanner.m; sourceTree = "<group>"; };
+		47C1989C19B5985100657CDB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		47CA47B719B56F91002C3DF4 /* iBeaconScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CA47BA19B56F91002C3DF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47CA47BC19B56F91002C3DF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C1989D19B5985100657CDB /* CoreBluetooth.framework in Frameworks */,
 				47CA47BD19B56F91002C3DF4 /* CoreGraphics.framework in Frameworks */,
 				47CA47BF19B56F91002C3DF4 /* UIKit.framework in Frameworks */,
 				47CA47BB19B56F91002C3DF4 /* Foundation.framework in Frameworks */,
@@ -79,10 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47C1989819B5968100657CDB /* iBeaconScanner */ = {
+			isa = PBXGroup;
+			children = (
+				47C1989919B5968100657CDB /* iBeaconScanner.h */,
+				47C1989A19B5968100657CDB /* iBeaconScanner.m */,
+			);
+			path = iBeaconScanner;
+			sourceTree = "<group>";
+		};
 		47CA47AE19B56F91002C3DF4 = {
 			isa = PBXGroup;
 			children = (
-				47CA47C019B56F91002C3DF4 /* iBeaconScanner */,
+				47CA47C019B56F91002C3DF4 /* Classes */,
 				47CA47DF19B56F91002C3DF4 /* iBeaconScannerTests */,
 				47CA47B919B56F91002C3DF4 /* Frameworks */,
 				47CA47B819B56F91002C3DF4 /* Products */,
@@ -101,6 +119,7 @@
 		47CA47B919B56F91002C3DF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47C1989C19B5985100657CDB /* CoreBluetooth.framework */,
 				47CA47BA19B56F91002C3DF4 /* Foundation.framework */,
 				47CA47BC19B56F91002C3DF4 /* CoreGraphics.framework */,
 				47CA47BE19B56F91002C3DF4 /* UIKit.framework */,
@@ -109,17 +128,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47CA47C019B56F91002C3DF4 /* iBeaconScanner */ = {
+		47CA47C019B56F91002C3DF4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				47C1989819B5968100657CDB /* iBeaconScanner */,
 				47CA47C919B56F91002C3DF4 /* AppDelegate.h */,
 				47CA47CA19B56F91002C3DF4 /* AppDelegate.m */,
 				47CA47CC19B56F91002C3DF4 /* Main.storyboard */,
 				47CA47CF19B56F91002C3DF4 /* ViewController.h */,
 				47CA47D019B56F91002C3DF4 /* ViewController.m */,
+				47C1989219B5938A00657CDB /* iBeaconCell.h */,
+				47C1989319B5938A00657CDB /* iBeaconCell.m */,
 				47CA47D219B56F91002C3DF4 /* Images.xcassets */,
 				47CA47C119B56F91002C3DF4 /* Supporting Files */,
 			);
+			name = Classes;
 			path = iBeaconScanner;
 			sourceTree = "<group>";
 		};
@@ -249,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C1989B19B5968100657CDB /* iBeaconScanner.m in Sources */,
 				47CA47D119B56F91002C3DF4 /* ViewController.m in Sources */,
+				47C1989419B5938A00657CDB /* iBeaconCell.m in Sources */,
 				47CA47CB19B56F91002C3DF4 /* AppDelegate.m in Sources */,
 				47CA47C719B56F91002C3DF4 /* main.m in Sources */,
 			);
@@ -456,6 +481,7 @@
 				47CA47EB19B56F91002C3DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47CA47EC19B56F91002C3DF4 /* Build configuration list for PBXNativeTarget "iBeaconScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +490,7 @@
 				47CA47EE19B56F91002C3DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
