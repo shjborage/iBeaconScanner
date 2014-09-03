@@ -6,7 +6,7 @@ Add iOS demo for this scanner.
 
 For iOS
 ========
-It can't do this, we tried it, but faile.
+It can't do this, we tried it, but failed.
 [Refer this](http://stackoverflow.com/questions/22833198/get-advertisement-data-for-ble-in-ios)
 
 Features
