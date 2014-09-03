@@ -4,6 +4,11 @@ iBeaconScanner
 Mac Application to scan for nearby iBeacons regardless of their UUID.
 Add iOS demo for this scanner.
 
+For iOS
+========
+It can't do this, we tried it, but faile.
+[Refer this](http://stackoverflow.com/questions/22833198/get-advertisement-data-for-ble-in-ios)
+
 Features
 ========
 
